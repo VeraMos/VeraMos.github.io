@@ -12,19 +12,6 @@
   $theme = "тестовое задание, заказ забора №" . $num;
   $message = $username . ", заказ №" . $num . " сформирован. В ближайшее время наш специалист свяжется с вами по телефону " . $phone . ".";
 
-  //if (filter_var($email, FILTER_VALIDATE_EMAIL)){
-    //$email = $emailTested;
-    $resultMail = mail($emailTested, $theme, $message);
-  //};
-
-  
-
-  //$redirect = isset($_SERVER['HTTP_REFERER'])? $_SERVER['HTTP_REFERER']:'index.html';
-  //header("Location: $redirect");
-  //exit();
-  //header('Refresh: 1; URL='.$_SERVER['HTTP_REFERER']);
-//header('Location: http://orderform/popup.html');
-
-
-  ?>
+  $resultMail = mail($emailTested, $theme, $message);
+   ?>
 
