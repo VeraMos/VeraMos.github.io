@@ -196,8 +196,7 @@ $(document).ready(function(){
 	});
 
 //функция отлавливает клик по конке Отправить, и показывает попап отправки и скрывает вторую форму
-	$('.form_two_submit').on('click', function(e) {
-		e.preventDefault();
+	$('.form_two_submit').on('click', function() {
 		$('.form_two').fadeOut();
 		$('.popup_wrapper').fadeIn();
 	});

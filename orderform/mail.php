@@ -12,6 +12,6 @@
   $theme = "тестовое задание, заказ забора №" . $num;
   $message = $username . ", заказ №" . $num . " сформирован. В ближайшее время наш специалист свяжется с вами по телефону " . $phone . ".";
 
-  $resultMail = mail($emailTested, $theme, $message);
+  $resultMail = mail($email, $theme, $message);
    ?>
 
