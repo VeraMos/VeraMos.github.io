@@ -13,5 +13,5 @@
   $message = $username . ", заказ №" . $num . " сформирован. В ближайшее время наш специалист свяжется с вами по телефону " . $phone . ".";
 
   $resultMail = mail($email, $theme, $message);
-   ?>
+?>
 
