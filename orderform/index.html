@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Заказ забора</title>
+	<meta name="description" content="Нарушения сна в пожилом возрасте">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="css/main.min.css">
+	
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
+</head>
+
+<body>
+
+<section class="form_wrapper">
+	<h1 class="visually-hidden">Заказ забора</h1>
+
+	<form action="mail.php" method="POST" class="form_one">
+		<p class="form_title">Заказать забор</p>
+
+		<div class="input-wrapper">
+			<label class="form_label_one" for="width">Длина забора</label>
+			<input class="form_input" type="number" name="width" id="width" placeholder="0" required><span class="width-word"></span>
+			<img id="width-checkmark" class="checkmark" src="img/checkmark.png" alt="галочка">
+			<p class="width_error">Неверно заполнено поле</p>
+		</div>
+
+		<div class="input-wrapper">
+			<label class="form_label_one" for="height">Высота забора</label>
+			<input class="form_input" type="number" name="height" id="height" placeholder="0" required><span class="height-word"></span>
+			<img id="height-checkmark" class="checkmark" src="img/checkmark.png" alt="галочка">
+			<p class="height_error">Неверно заполнено поле</p>
+		</div>
+
+		<div class="wrapper-select">
+			<p class="form_label_one">Материал забора</p>
+			<select class="form_select" name="material" id="material-select">
+				<option data-price="0" class="form_option" value="0" selected>Выберите материал</option>
+				<option data-price="400" data-material="профнастил" class="form_option" value="Профнастил 400 ₽ за м²">Профнастил 400 ₽ за м²</option>
+				<option data-price="500" data-material="модули" class="form_option" value="Модули 500 ₽ за м²">Модули 500 ₽ за м²</option>
+				<option data-price="700" data-material="бетон" class="form_option" value="Бетон 700 ₽ за м²">Бетон 700 ₽ за м²</option>
+				<option data-price="200" data-material="сетка" class="form_option" value="Сетка 200 ₽ за м²">Сетка 200 ₽ за м²</option>
+			</select>
+			<img id="material-checkmark" class="checkmark" src="img/checkmark.png" alt="галочка">
+			<p class="select_error">Неверно заполнено поле</p>
+		</div>
+
+		<div class="wrapper-checkbox">
+			<input data-install="200" class="form_checkbox" type="checkbox" name="installation" id="installation">
+			<label class="checkbox_label" for="installation">Нужен монтаж</label>
+		</div>
+
+		<p class="form_summ">Сумма заказа: <span id="summ"></span> <span>₽</span></p>
+
+		<button id="form_submit" class="form_submit" type="submit"><span>Далее</span></button>
+	</form>
+
+	<form action="mail.php" method="POST" class="form_two">
+		<a class="link-return" href="#">←<span class="arrow">Вернуться</span></a>
+		<p class="form_two_title">Пожалуйста, представьтесь</p>
+
+		<div class="wrapper">
+			<div class="input-wrapper-two">
+				<label class="form_label" for="username">Ваше имя</label>
+				<input class="form_two_input" type="text" name="username" id="username" required>
+				<img id="username-checkmark" class="checkmark" src="img/checkmark.png" alt="галочка">
+			</div>
+
+			<div class="input-wrapper-two">
+				<label class="form_label" for="email">Электронная почта</label>
+				<input class="form_two_input" type="email" name="email" id="email" required> 
+				<img id="email-checkmark" class="checkmark" src="img/checkmark.png" alt="галочка">
+			</div>
+
+			<div class="input-wrapper-two">
+				<label class="form_label" for="phone">Телефон</label>
+				<input class="form_two_input" type="tel" name="phone" id="phone" placeholder="+7 (___) ___ - __ - __" required> 
+				<img id="phone-checkmark" class="checkmark" src="img/checkmark.png" alt="галочка">
+			</div>
+
+			<p class="form_text">Вы укомплектовали забор <span> длинной <span id="widthForm"></span>
+			 <span class="width-word"></span></span> и <span > высотой <span id="heightForm"></span> <span class="height-word"></span> </span>
+			 из материала <span id="material"></span> на сумму <span id="summForm" class="red"></span>
+			</p>
+		</div>
+		<button id="form_two_submit" class="form_two_submit" type="submit"><span>Отправить</span></button>
+
+	</form>
+
+	<div class="popup_wrapper">
+		<button class="popup_close">Закрыть</button>
+		<div class="popup">
+			<p class="popup_title"><span class="black" id="popupName"></span><br> заказ <span id="popupNum"></span> сформирован!</p>
+			<p class="popup_text_email">Мы повторили его комплектацию на почту <span id="popupEmail"></span></p>
+			<p class="popup_text_phone">В ближайшее время наш специалист свяжется с вами по телефону<br> <span id="popupPhone"></span></p>
+		</div>
+	</div>
+</section>
+
+
+  <script src="libs/jquery/dist/jquery.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+  <!-- <link rel="stylesheet" href="libs/jqueryui-selectmenu/jquery-ui.min.css"> -->
+  <!-- <script src="libs/jqueryui-selectmenu/jquery-ui.min.js"></script> -->
+  <script src="libs/jquery.maskedinput.min.js"></script>
+  <script>
+  jQuery(function($){
+   $("#phone").mask("+7 (999) 999-99-99");
+	});
+  </script>
+
+</body>
+</html>
