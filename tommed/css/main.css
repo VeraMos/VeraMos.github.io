@@ -873,8 +873,9 @@ text-transform: uppercase;
   background-image: url("../img/img-reason.svg");
 }
 
-.img-demontag{
-  float: right;
+.img-demontag {
+  display: block;
+  margin: 30px auto;
 }
 
 .priсe__title {
