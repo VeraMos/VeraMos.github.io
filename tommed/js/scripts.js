@@ -57,7 +57,7 @@ $(function() {
   ]
 });
 
-     $('.sertificate-slider').slick({
+        $('.sertificate-slider').slick({
     //dots: true,
     infinite: true,
     slidesToShow: 5,
@@ -74,10 +74,28 @@ $(function() {
        nextArrow: '<button class="prev-right"></button>'
      }
     },
+    {
+      breakpoint: 1070,
+      settings: {
+       slidesToShow: 4,
+       slidesToScroll: 1,
+       prevArrow: '<button class="prev-left"></button>',
+       nextArrow: '<button class="prev-right"></button>'
+     }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+       slidesToShow: 3,
+       slidesToScroll: 1,
+       prevArrow: '<button class="prev-left"></button>',
+       nextArrow: '<button class="prev-right"></button>'
+     }
+    },
    {
       breakpoint: 768,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 2,
         slidesToScroll: 1,
         prevArrow: '<button class="prev-left"></button>',
         nextArrow: '<button class="prev-right"></button>'
@@ -86,16 +104,25 @@ $(function() {
      {
       breakpoint: 576,
       settings: {
-        dots: true,
-        slidesToShow: 2,
+        //dots: true,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: false,
-        nextArrow: false
+        prevArrow: '<button class="prev-left"></button>',
+        nextArrow: '<button class="prev-right"></button>'
+        }
+     },
+     {
+      breakpoint: 400,
+      settings: {
+        //dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button class="prev-left"></button>',
+        nextArrow: '<button class="prev-right"></button>'
         }
      }
   ]
 });
-  
 
   //mobile menu
   // if ( $(window).width() < 992 ) {
