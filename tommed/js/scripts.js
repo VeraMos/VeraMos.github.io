@@ -37,11 +37,13 @@ $(function() {
      {
       breakpoint: 576,
       settings: {
-        dots: true,
+        //dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: false,
-        nextArrow: false
+        centerMode: true,
+        variableWidth: true,
+        prevArrow: '<button class="prev-left"></button>',
+        nextArrow: '<button class="prev-right"></button>'
         }
      },
      {
@@ -50,6 +52,8 @@ $(function() {
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerMode: true,
+        variableWidth: true,
         prevArrow: false,
         nextArrow: false
         }
@@ -57,7 +61,7 @@ $(function() {
   ]
 });
 
-        $('.sertificate-slider').slick({
+     $('.sertificate-slider').slick({
     //dots: true,
     infinite: true,
     slidesToShow: 5,
@@ -124,19 +128,4 @@ $(function() {
   ]
 });
 
-  //mobile menu
-  // if ( $(window).width() < 992 ) {
-  //   $('.nav__hamburger').on('click', function() {
-  //     $(this).toggleClass("active");
-  //     $('.nav__menu').toggleClass('active');
-  //     $('body').toggleClass("fixed");
-  //   });
-  //   $('.nav__list-item_sub').on('click', function(){
-  //     $(this).toggleClass('active').siblings().removeClass('active');
-
-  //   });
-  //   $('.nav__list-item_sub > a').on('click', function(e){
-  //     e.preventDefault();
-  //   });
-  // }
 });
