@@ -1,0 +1,406 @@
+@media screen and (max-width: 1200px) {
+  
+}
+
+@media screen and (max-width: 1024px) {
+.catalog-card {
+  width: 48%;
+}
+.header-menu__item_contacts {
+  display: none;
+}
+
+.header-menu__item_about {
+  display: none;
+}
+
+.footer-menu_block::after {
+  background-color: transparent;
+}
+
+.footer-contacnt_wrap {
+  margin: 15px;
+  max-width: 600px;
+}
+
+.footer_btn {
+  margin: 5px 0 0;
+}
+
+.prev-left {
+  left: 0;
+  transform: scale(0.8);
+  background-color: rgba(255, 255, 255, 0.5);
+  background-size: 50% 56%;
+  background-position: center center;
+}
+
+
+.prev-right {
+  right: 0;
+  transform: scale(0.8);
+  background-size: 50% 56%;
+  background-position: center center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+}
+@media screen and (max-width: 992px) {
+  
+}
+@media screen and (max-width: 768px) {
+  .header_menu-block {
+    display: none;
+  }
+
+  .header_menu-block.active {
+    display: block;
+  }
+
+  .header-contacts_block__mobile a {
+    color: #333333;
+  }
+
+  .prev-left {
+    left: 0;
+  }
+
+  .prev-right {
+    right: 0;
+  }
+
+  .advant-list {
+    flex-wrap: wrap;
+  }
+  .abvant-item {
+    width: 50%;
+    margin: 10px 0;
+  }
+  .header-contacts_block {
+    width: 50%;
+    justify-content: flex-end;
+  }
+  .btn-more {
+    font-size: 12px;
+    line-height: 14px;
+    border: none;
+    text-decoration: underline!important;
+    color: #B3B3B3;
+    display: block;
+  }
+  .btn-more:hover {
+    color: #333333;
+  }
+  .seo_text_more {
+    display: none;
+  }
+  .catalog-card__item {
+    margin: 5px 0;
+  }
+
+  .catalog-index__title {
+    font-size: 27px;
+    line-height: 29px;
+  }
+
+  .seo-img_block img {
+    width: 100%;
+  }
+
+  .seo-img_block {
+    flex-wrap: wrap;
+  }
+
+  .banner-list {
+    padding-left: 0;
+  }
+  .banner-item__block {    
+    padding: 66px 0 30px 30px;
+  }
+  .footer-menu_block {
+    flex-wrap: wrap;
+  }
+
+  .header-contacts_email {
+    display: none;
+  }
+
+  .header-contacts_zakzv {
+    display: none;
+  }
+
+  .prev-right {
+    opacity: 0;
+  }
+
+  .prev-left {
+    opacity: 0;
+  }
+
+  .header__menu-toggle {
+    display: block;
+  }
+
+  .header__menu-toggle span, .header__menu-toggle span::before, .header__menu-toggle span::after {
+    display: block;
+  }
+
+  .header_menu {
+    padding-left: 30px;
+  }
+
+  .header-menu__list {
+    flex-direction: column;
+  }
+
+  .header-menu__item {
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+  }
+
+  .header-menu__item::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #F2F2F2;
+  }
+
+  .mobile-none {
+    display: none;
+  }
+
+  .desctop-none {
+    display: block;
+  }
+
+  .header-menu__list{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .catalog-section__list {
+    justify-content: center;
+  }
+  .catalog-card {
+    width: 80%;
+}  
+  .footer-contacnt_wrap {
+    flex-wrap: wrap;
+  }
+
+  .footer-menu-arrow {
+    padding-left: 0px;
+    margin-top: 5px;
+    display: inline;
+  }
+
+  .footer-menu_list{
+    display: none;
+  }
+
+  .footer-item-first a{
+    display: inline-block!important;
+  }
+
+  .footer-item-first {
+    display: flex;
+    justify-content: space-between;
+    min-width: 280px;
+    margin: 15px 0;
+  }
+
+  .fancybox-slide--html .fancybox-close-small {
+  color: #333333;
+  padding: 10px;
+  right: 0px;
+  top: 0px;
+}
+  .header_top_text p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .header_top_text span {
+    font-size: 12px;
+    line-height: 13px;
+  }
+
+  .header_top {
+    padding: 20px 30px;
+  }
+
+  .header_top_text {
+    text-align: left;
+    margin: 0;
+  }
+
+  .header-contacts_tel {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .header-contacts_logo img {
+    width: 80%;
+  }
+
+  .header-contacts_logo {
+    padding-left: 35px;
+  }
+
+  .header-contacts_logo::before {
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    top: 0;
+  }
+  .search-header__form {
+    width: 170px;
+    min-width: auto;
+  }
+  .search-header__input {
+    width: 150px;
+    min-width: auto;
+  }
+  .banner-item_slide1 {
+    background-image: url(/img/index/slider1-mobile.png)!important;
+  }
+  .banner-ttl {
+    font-size: 32px;
+    line-height: 34px;
+  }
+  .banner-item__block {
+    padding: 25px 0px 27px 25px;
+    max-width: 290px;
+  }
+  .banner-text {
+   font-size: 14px;
+   line-height: 17px;
+  }
+
+  .banner-tel {
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 210px;
+  }
+
+  .banner-list {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .banner-item_slide2 {
+    background-position-x: 55%;
+  } 
+  .footer-tel {
+    margin: 15px 0;
+  }
+  .footer-icon_block {
+    margin: 20px 0;
+  }
+  .footer-menu_about li {
+    margin: 10px 0;
+  }
+  .footer-menu_list {
+    min-width: 100%!important;
+  }
+
+  .footer-menu_list .active {
+    display: block;
+  }
+
+  .catalog-menu-arrow {
+    display: inline;
+    margin-top: 15px;
+  }
+
+  .catalog-card__title-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog-card {
+    padding: 15px 10px 15px 15px;
+  }
+
+  .catalog-card-bg {
+    display: none;
+  }
+
+  .catalog-card-mobile {
+    opacity: 1;
+  }
+
+  .catalog-card {
+    height: auto;
+    min-height: 90px;
+  }
+
+  .catalog-card__list {
+    display: none;
+  }
+
+  .footer-menu_block::before {
+    content: "";
+    position: absolute;
+    bottom: -5%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+  }
+
+  .slick-dots {
+    text-align: left!important;
+  }
+
+}
+@media screen and (max-width: 425px) {
+  .abvant-item {
+    width: 100%;
+    }
+  .catalog-card {
+    width: 100%;
+  }
+  .header_top_text {
+    width: 50%;
+  }
+  .header_top_text::after {
+    right: -135px;
+  }
+  .header-contacts_block {
+    width: 60%;
+  }
+  .seo-img_wrap img {
+    width: 97%;
+  }
+
+  .banner-tel {
+    margin-top: 175px;
+  }
+
+  .slick-dots li.slick-active button:before {
+  font-size: 10px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 10px!important;
+  }
+
+  }
+@media screen and (max-width: 320px) {
+ .header_top_text::after {
+  right: 0;
+  left: 140px;
+ }
+
+ .catalog-card__title {
+    max-width: 50%;
+  }
+
+}
+

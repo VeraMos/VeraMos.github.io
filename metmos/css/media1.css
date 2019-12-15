@@ -1,0 +1,234 @@
+@media screen and (max-width: 1200px) {
+  .header__contacts, .footer__contacts {
+    flex-wrap: wrap;
+  }
+  .main-footer {
+    height: 212px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .header__contacts, .footer__contacts {
+    flex-direction: column;
+  }
+  .footer__contacts {
+    width: 300px;
+  }
+  .main-footer {
+    height: 212px;
+  }
+  .footer__wrap {
+    flex-wrap: wrap; 
+  }
+  .img-demontag img {
+    width: 90%;
+    height: 90%;
+  }
+  .img-demontag {
+    margin: 0 auto;
+  }
+
+  .contacts_map img{
+   width: 100%;
+}
+  /*.footer-social {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+  .footer-social a {
+    margin: 10px;
+  }*/
+}
+@media screen and (max-width: 992px) {
+  .header__wrap {
+    flex-wrap: wrap; 
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__menu--active {
+    display: block;
+  }
+  .header__menu__list {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header__menu__item {
+    margin: 10px;
+  }
+  .header__menu-wrapper--active {
+    background-color: #45AAF2;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 300px;
+    padding: 20px;
+    opacity: 0.9;
+  }
+  .header__menu-item--active {
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .header__menu__item a {
+    color: #fff;
+  }
+  .header__menu-item--active :hover {
+    text-decoration: none;
+      }
+  .header__menu-toggle {
+    display: block;
+  }
+  .header__menu-toggle {
+    display: block;
+  }
+  .header__menu-toggle span {
+    display: block;
+  }
+  .header__menu-toggle span::before {
+    display: block;
+  }
+  .header__menu-toggle span::after {
+    display: block;
+  }
+  .working-russia img {
+    width: 90%;
+  }
+  .special-offers__slider-price {
+    font-size: 20px;
+  }
+  .form__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .form__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .footer-social {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+  }
+  .map-canvas iframe {
+    height: 400px;
+  }
+  .installation__img {
+    width: 90%;
+    height: 70%;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+    .header__wrap, .footer__wrap {
+    flex-direction: column; 
+  }
+  .footer__wrap {
+    text-align: center;
+  }
+    .header__contacts {
+      padding: 30px 0;
+      width: 100%;
+    }
+  .footer__contacts {
+    padding: 30px 0;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .footer__contacts li {
+    margin-bottom: 20px;
+  }
+  .footer__tel::before {
+    left: 40px;
+  }
+  .footer__address::before {
+    left: 20px;
+  }
+  .footer__time::before {
+    left: 60px;
+  }
+  .main-footer {
+    height: 350px;
+  }
+  .footer-social {
+    text-align: center;
+}
+  .header__menu-wrapper--active {
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    opacity: 0.9;
+    padding-top: 150px;
+  }
+  .form__img-man {
+    display: none;
+  }
+  .banner__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .banner__text {
+    font-size: 20px;
+  }
+  .special-offers {
+    margin-bottom: 70px;
+  }
+  .form__text br {
+    display: none;
+  }
+  .img-demontag {
+    width: 90%;
+  }
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+  .banner__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .banner__text {
+    font-size: 16px;
+  }
+  .header__logo img {
+    width: 75%;
+  }
+  .working-russia__title,
+  .special-offers__title {
+  font-size: 23px;
+  line-height: 30px;
+}
+  .main-footer {
+    padding: 30px 15px;
+  }
+  .map-canvas iframe {
+    height: 300px;
+  }
+  .prev-left {
+    background-size: 50%;
+    left: 7px;
+  }
+  .prev-right {
+    background-size: 50%;
+    right: -10px;
+  }
+  .special-offers__slider-block {
+    margin: 0 50px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .prev-left {
+    display: none;
+  }
+  .prev-right {
+    display: none;
+  }
+}
+
